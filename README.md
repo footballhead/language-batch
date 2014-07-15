@@ -1,4 +1,4 @@
-language-batch
-==============
+Batch Syntax Highlighting for Atom
+===============================================================================
 
-Adds syntax highlighting for Windows Batch files in Atom.
+Adds syntax highlighting for Windows Batch (`.bat`) files.
