@@ -51,8 +51,8 @@
   }
   # ERRORLEVEL
   {
-    'match': 'ERRORLEVEL|errorlevel'
-    'name': 'variable.language.batch'
+    'match': 'ERRORLEVEL|errorlevel|EXIST|exist'
+    'name': 'keyword.other.batch'
   }
   # single quoted string
   {
