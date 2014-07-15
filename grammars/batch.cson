@@ -42,6 +42,16 @@
         'name': 'keyword.operator.batch'
     'match': '\\b(SET|set)\\b([^=]+)(=)'
   }
+  # single-quote strings
+  {
+    'match': '\'[^\']*\''
+    'name' : 'string.quoted.single.batch'
+  }
+  # double-quote strings
+  {
+    'match': '\"[^\"]*\"'
+    'name' : 'string.quoted.double.batch'
+  }
   # single line comments
   {
     'match': 'REM.*$|::.*$'
