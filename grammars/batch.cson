@@ -36,7 +36,11 @@
     'captures':
       '1':
         'name': 'support.function.batch'
-    'match': '\\b(SET|set)\\b'
+      '2':
+        'name': 'variable.other.batch'
+      '3':
+        'name': 'keyword.operator.batch'
+    'match': '\\b(SET|set)\\b([^=]+)(=)'
   }
   # single line comments
   {
