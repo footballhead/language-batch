@@ -54,30 +54,6 @@
     'match': 'ERRORLEVEL|errorlevel|EXIST|exist'
     'name': 'keyword.other.batch'
   }
-  # single quoted string
-  {
-    'begin': '\''
-    'beginCaptures':
-      '0':
-        'name': 'punctuation.definition.string.begin.batch'
-    'end': '\''
-    'endCaptures':
-      '0':
-        'name': 'punctuation.definition.string.end.batch'
-    'name': 'string.quoted.single.batch'
-  }
-  # double-quoted string
-  {
-    'begin': '"'
-    'beginCaptures':
-      '0':
-        'name': 'punctuation.definition.string.begin.batch'
-    'end': '"'
-    'endCaptures':
-      '0':
-        'name': 'punctuation.definition.string.end.batch'
-    'name': 'string.quoted.double.batch'
-  }
   # operators (pipes, redirects, etc)
   {
     'match': '@|\\||>|>>|NOT|not'
