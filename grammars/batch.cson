@@ -41,7 +41,7 @@
   }
   # built-in non-control functionality
   {
-    'match': '\\b(ASSOC|assoc|CALL|call|CD|cd|CLS|cls|COLOR|color|DATE|date|DEL|del|DIR|dir|ECHO|echo|ENDLOCAL|endlocal|ERASE|erase|FTYPE|ftype|MD|md|MKLINK|mklink|MOVE|move|PATH|path|POPD|popd|PROMPT|prompt|PUSHD|pushd|REN|ren|RD|rd|SETLOCAL|setlocal|SHIFT|shift|START|start|TIME|time|TITLE|title|VER|ver|VERIFY|verify|VOL|vol)\\b'
+    'match': '\\b(ASSOC|assoc|CALL|call|CD|cd|CLS|cls|COLOR|color|COPY|copy|DATE|date|DEL|del|DIR|dir|ECHO|echo|ENDLOCAL|endlocal|ERASE|erase|FTYPE|ftype|MD|md|MKLINK|mklink|MOVE|move|PATH|path|POPD|popd|PROMPT|prompt|PUSHD|pushd|REN|ren|RD|rd|SETLOCAL|setlocal|SHIFT|shift|START|start|TIME|time|TITLE|title|VER|ver|VERIFY|verify|VOL|vol)\\b'
     'name': 'support.function.batch'
   }
   # control keywords
