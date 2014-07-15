@@ -78,7 +78,16 @@
         'name': 'punctuation.definition.string.end.batch'
     'name': 'string.quoted.double.batch'
   }
-
+  # operators (pipes, redirects, etc)
+  {
+    'match': '@|\\||>|>>|NOT|not'
+    'name': 'keyword.operator.batch'
+  }
+  # escaped characters
+  {
+    'match': '\\^.|%%'
+    'name': 'constant.character.escape.batch'
+  }
   # constant numbers
   {
     'captures':
