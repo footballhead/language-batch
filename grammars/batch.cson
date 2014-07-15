@@ -70,7 +70,7 @@
     'captures':
       '1':
         'name': 'constant.numeric.batch'
-    'match': '([0-9]+)'
+    'match': '\\b([0-9]+)\\b'
     'name': 'meta.numberic.batch'
   }
   # script arguments
