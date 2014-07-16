@@ -22,7 +22,7 @@
   }
   # user-defined/environment variable substitution
   {
-    'match': '%%[A-Za-z]'
+    'match': '%%?(~[fdpnxatz]*)?([0-9]+|[A-Za-z][^A-Za-z])'
     'name': 'variable.other.batch'
   }
   # escaped characters
@@ -47,11 +47,6 @@
   # user-defined/environment variable substitution
   {
     'match': '%\\*'
-    'name': 'variable.other.batch'
-  }
-  # user-defined/environment variable substitution
-  {
-    'match': '%(~[fdpnxatz]*)?[0-9]+'
     'name': 'variable.other.batch'
   }
 
@@ -115,10 +110,5 @@
         'name': 'constant.numeric.batch'
     'match': '\\b([0-9]+)\\b'
     'name': 'meta.numberic.batch'
-  }
-  # script arguments
-  {
-    'match': '%[0-9]+'
-    'name': 'variable.parameter.batch'
   }
 ]
