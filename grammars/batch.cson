@@ -77,15 +77,14 @@
     'match': '\"[^\"]*\"'
     'name' : 'string.quoted.double.batch'
   }
-
   # built-in non-control functionality
   {
-    'match': '\\b(?i)(assoc|call|cd|cls|color|copy|date|del|dir|echo|endlocal|erase|ftype|md|mklink|move|path|popd|prompt|pushd|ren|rd|setlocal|shift|start|time|title|ver|verify|vol)\\b'
+    'match': '\\b(?i)(assoc|cd|cls|color|copy|date|del|dir|echo|endlocal|erase|ftype|md|mklink|move|path|popd|prompt|pushd|ren|rd|setlocal|shift|start|time|title|ver|verify|vol)\\b'
     'name': 'support.function.batch'
   }
   # control keywords
   {
-    'match': '\\b(?i)(if|for|else|do|return|exit|pause)\\b'
+    'match': '\\b(?i)(if|for|else|do|return|exit|pause|call)\\b'
     'name': 'keyword.control.batch'
   }
   # ERRORLEVEL
