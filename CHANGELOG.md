@@ -1,3 +1,9 @@
+## 0.3.0 - More additions!
+* Started testing against random scripts
+* Improved some behavior
+* Added some behavior
+* Added more bugs :P
+
 ## 0.2.0 - Update
 * Fixed a lot of bugs
 
