@@ -1,3 +1,6 @@
+## 0.3.1 - Varaibles!
+* Fixed variable syntax highlighting
+
 ## 0.3.0 - More additions!
 * Started testing against random scripts
 * Improved some behavior
