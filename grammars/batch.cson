@@ -6,15 +6,29 @@
 ]
 'name': 'Batch'
 'patterns': [
+  # single line comments
+  {
+    'match': '(REM|rem).*$|::.*$'
+    'name': 'comment.line.batch'
+  }
+  # label declaration
+  {
+    'captures':
+      '1':
+        'name': 'entity.name.section.batch'
+      '3':
+        'name': 'comment.line.batch'
+    'match': '^(:[^ \\n]*)( |\\n)(.*)'
+  }
+  # user-defined/environment variable substitution
+  {
+    'match': '%%[A-Za-z]'
+    'name': 'variable.other.batch'
+  }
   # escaped characters
   {
     'match': '\\^.|%%'
     'name': 'constant.character.escape.batch'
-  }
-  # label declaration
-  {
-      'match': '^:.*'
-      'name': 'entity.name.section.batch'
   }
   # goto label
   {
@@ -25,6 +39,22 @@
         'name': 'entity.name.section.batch'
     'match': '\\b(GOTO|goto)\\b(.*)'
   }
+  # delayed expansion
+  {
+    'name': 'variable.other.batch'
+    'match': '![^!]*!'
+  }
+  # user-defined/environment variable substitution
+  {
+    'match': '%\\*'
+    'name': 'variable.other.batch'
+  }
+  # user-defined/environment variable substitution
+  {
+    'match': '%~[fdpnxatz]*[0-9]+'
+    'name': 'variable.other.batch'
+  }
+
   # user-defined/environment variable substitution
   {
     'begin': '%'
@@ -52,29 +82,30 @@
     'match': '\"[^\"]*\"'
     'name' : 'string.quoted.double.batch'
   }
-  # single line comments
-  {
-    'match': 'REM.*$|::.*$'
-    'name': 'comment.line.batch'
-  }
+
   # built-in non-control functionality
   {
-    'match': '\\b(ASSOC|assoc|CALL|call|CD|cd|CLS|cls|COLOR|color|COPY|copy|DATE|date|DEL|del|DIR|dir|ECHO|echo|ENDLOCAL|endlocal|ERASE|erase|FTYPE|ftype|MD|md|MKLINK|mklink|MOVE|move|PATH|path|POPD|popd|PROMPT|prompt|PUSHD|pushd|REN|ren|RD|rd|SETLOCAL|setlocal|SHIFT|shift|START|start|TIME|time|TITLE|title|VER|ver|VERIFY|verify|VOL|vol)\\b'
+    'match': '\\b(?i)(assoc|call|cd|cls|color|copy|date|del|dir|echo|endlocal|erase|ftype|md|mklink|move|path|popd|prompt|pushd|ren|rd|setlocal|shift|start|time|title|ver|verify|vol)\\b'
     'name': 'support.function.batch'
   }
   # control keywords
   {
-    'match': '\\b(if|IF|for|FOR|else|ELSE|do|DO|return|RETURN|exit|EXIT|PAUSE|pause)\\b'
+    'match': '\\b(?i)(if|for|else|do|return|exit|pause)\\b'
     'name': 'keyword.control.batch'
   }
   # ERRORLEVEL
   {
-    'match': 'ERRORLEVEL|errorlevel|EXIST|exist'
+    'match': '\\b(?i)(errorlevel|exist|in|neq|not)\\b'
+    'name': 'keyword.other.batch'
+  }
+  # ERRORLEVEL
+  {
+    'match': '(?i)(nul)'
     'name': 'keyword.other.batch'
   }
   # operators (pipes, redirects, etc)
   {
-    'match': '@|\\||>|>>|NOT|not'
+    'match': '@|\\||[0-9]?>>?|&[0-9]?|\\+|==|nul'
     'name': 'keyword.operator.batch'
   }
   # constant numbers
