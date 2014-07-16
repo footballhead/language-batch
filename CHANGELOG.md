@@ -1,3 +1,6 @@
+## 0.3.2 - Uh...
+* I screwed up the last release so this is my attempted fix.
+
 ## 0.3.1 - Varaibles!
 * Fixed variable syntax highlighting
 
