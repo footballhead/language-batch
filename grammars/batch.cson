@@ -51,7 +51,7 @@
   }
   # user-defined/environment variable substitution
   {
-    'match': '%~[fdpnxatz]*[0-9]+'
+    'match': '%(~[fdpnxatz]*)?[0-9]+'
     'name': 'variable.other.batch'
   }
 
