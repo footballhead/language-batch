@@ -1,7 +1,7 @@
 {
   "name": "language-batch",
   "main": "./lib/language-batch",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Adds syntax highlighting for Windows Batch files in Atom.",
   "repository": "https://github.com/footballhead/language-batch",
   "license": "MIT",
