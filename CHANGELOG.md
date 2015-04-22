@@ -1,3 +1,6 @@
+## 0.3.3 - Less deprecated stuff
+* Renamed `scoped-properties` to `settings` (Issue #14)
+
 ## 0.3.2 - Uh...
 * I screwed up the last release so this is my attempted fix.
 
