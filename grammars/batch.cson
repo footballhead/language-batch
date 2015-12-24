@@ -8,7 +8,7 @@
 'patterns': [
   # single line comments
   {
-    'match': '(REM|rem).*$|::.*$'
+    'match': '(REM |rem ).*$|::.*$'
     'name': 'comment.line.batch'
   }
   # label declaration
