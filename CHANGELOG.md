@@ -1,3 +1,6 @@
+## 0.4.0 - More keywords
+* Added `mkdir`, `rmdir`, `choice`, `xcopy` (Issue #19) (thanks retroverse)
+
 ## 0.3.3 - Less deprecated stuff
 * Renamed `scoped-properties` to `settings` (Issue #14)
 
