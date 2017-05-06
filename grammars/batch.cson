@@ -6,9 +6,14 @@
 ]
 'name': 'Batch'
 'patterns': [
-  # single line comments
+  # single line comments using REM
   {
-    'match': '(REM |rem ).*$|::.*$'
+    'match': '(^|&)\\s*@?\\s*((?i)rem)($|\\s.*$)'
+    'name': 'comment.line.batch'
+  }
+  # single line comments using ::
+  {
+    'match': '(^|&)\\s*@?\\s*::.*$'
     'name': 'comment.line.batch'
   }
   # label declaration
